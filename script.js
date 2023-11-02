@@ -2,7 +2,6 @@ let currentAudio = null; // переменная для хранения тек�
 
 function playAudio(audioSrc) {
     return new Promise((resolve) => {
-        // Проверяем, играет ли текущее аудио
         if (currentAudio) {
             currentAudio.pause();
             currentAudio.currentTime = 0; // Сбрасываем в начало для возможности повторного воспроизведения
